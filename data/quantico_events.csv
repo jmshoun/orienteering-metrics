@@ -1,137 +1,211 @@
-﻿date,venue,location,style,designer
-2019-11-24,Hemlock Overlook,Hemlock Pavilion,Classic,Andrew Komm
-2019-11-17,Patuxent River,Barn Parking Area,Stumble,Matt Stout
-2019-11-10,Balls Bluff,Edwards Landing Pavilion,Classic,Patrick Farley
-2019-10-27,Great Falls,Great Falls Tavern,Classic,Nadim Ahmed
-2019-10-13,Gunston Hall,Main Parking Area,Classic,Keg Good
-2019-09-29,Swanson Road,North End,Classic,Craig Shelden
-2019-09-21,Occoquan,Shelter 3,Classic,Sidney Sachs
-2019-09-15,Fountainhead,East,Classic,Charles Carrick
-2019-09-08,Cunningham Falls,Manor Area,Classic,Sam Listwak
-2019-09-07,Pohick Bay,Pavilion 3,Beginner,David Onkst
-2019-07-20,Wheaton,Shorefield Area,Beginner,David Onkst
-2019-06-02,Jug Bay,Caretaker's House Area,Chase,Craig Shelden
-2019-05-19,Pohick Bay,Shelter 2,Classic,Keg Good
-2019-05-05,Gunston Hall,Main Parking Area,Classic,Sidney Sachs
-2019-04-28,Lake Needwood,Circle Parking Area,Classic,Michael Dickey
-2019-04-20,Manassas,Stuart's Hill,Classic,Gavin Wiese
-2019-03-30,Rosaryville,Pavilion Parking Area,Classic,Michael Dickey
-2019-03-24,Patapsco Valley,Avalon Area,Classic,Kim Jepsen
-2019-03-16,Prince William Forest,Camp 5,Night,Gary Smith
-2019-03-10,Mason Neck,Mason Neck,Classic,Ken Walker Jr
-2019-03-03,Cabin John,Playground Parking Area,Classic,Don Fish
-2019-02-17,Wheaton,Shorefield Area,Classic,Chris Gross
-2019-02-02,Hemlock Overlook,Hemlock Pavilion,Bumble,David Onkst
-2019-01-27,Patapsco Valley,Catonsville,Classic,Ted Good
-2019-01-06,Fountainhead,West,Classic,Victor Lin
-2018-12-09,Seneca Creek,Smokey Glen Farm,Classic,Nadim Ahmed
-2018-12-02,Prince William Forest,Pine Grove,Classic,Mark Hicks
-2018-12-01,Little Bennett,Prescott Road Parking Area,Classic,Boris Granovskiy
-2018-11-11,Great Falls,Great Falls Tavern,Classic,Sam Listwak
-2018-11-04,Quantico,Hangman Tree,Classic,Daniel Heimgartner
-2018-11-03,Fountainhead,Central,Classic,Francis Hogle
-2018-10-21,Balls Bluff,Edwards Landing Pavilion,Classic,Tom Strat
-2018-10-07,Patuxent River,Barn Parking Area,Classic,Craig Shelden
-2018-09-16,Occoquan,Shelter 4,Classic,Charles Carrick
-2018-09-08,Pohick Bay,Pavilion 3,Beginner,David Onkst
-2018-07-14,Wheaton,Shorefield Area,Beginner,David Onkst
-2018-06-10,Cunningham Falls,Manor Area,Classic,Jon Torrance
-2018-06-03,Jug Bay,Caretaker's House Area,Chase,Craig Shelden
-2018-05-20,Fountainhead,Far West,Classic,Vido Aleksiev
-2018-05-13,Lake Needwood,Circle Parking Area,Classic,Peggy Dickison
-2018-05-06,Pohick Bay,Eagle's Nest,Classic,Alexis Merka
-2018-04-29,Rosaryville,Pavilion Parking Area,Classic,Russ Damtoft
-2018-04-21,Patapsco Valley,Granite Area,Classic,Mark Mace
-2018-04-15,Mason Neck,Mason Neck,Classic,Jon Torrance
-2018-04-08,Gunston Hall,Main Parking Area,Classic,Ken Walker Jr
-2018-03-25,Patapsco Valley,Avalon Area,Classic,Alexis Merka
-2018-03-18,Manassas,Stuart's Hill,Classic,Vido Aleksiev
-2018-03-11,Wheaton,Shorefield Area,Classic,Nadim Ahmed
-2018-03-04,Little Bennett,Prescott Road Parking Area,Classic,Sam Listwak
-2018-02-11,Seneca Creek,Clopper Lake,Classic,Michael Dickey
-2018-02-03,Patapsco Valley,Catonsville,Bumble,David Onkst
-2018-01-28,Fountainhead,West,Classic,Daniel Heimgartner
-2018-01-21,Patapsco Valley,McKeldin Area,Classic,Kim Jepsen
-2018-01-07,Greenbelt,Sweetgum Parking,Classic,Victor Lin
-2017-12-16,Cabin John,Playground Parking Area,Classic,Michael Dickey
-2017-11-19,Great Falls,Great Falls Tavern,Classic,Sam Listwak
-2017-10-29,Prince William Forest,Pine Grove,Classic,Nadim Ahmed
-2017-10-15,Patuxent River,Barn Parking Area,Classic,Craig Shelden
-2017-09-24,Swanson Road,North End,Classic,Craig Shelden
-2017-09-17,Hemlock Overlook,Hemlock Pavilion,Classic,Tom Nolan
-2017-08-05,Mason Neck,Mason Neck,Beginner,David Onkst
-2017-07-30,Wheaton,Shorefield Area,Beginner,David Onkst
-2017-06-04,Jug Bay,Caretaker's House Area,Chase,Peggy Dickison
-2017-05-20,Fountainhead,Bull Run Marina,Classic,Keg Good
-2017-05-14,Rosaryville,Pavilion Parking Area,Classic,Tom Nolan
-2017-05-06,Patapsco Valley,Granite Area,Classic,Kim Jepsen
-2017-04-30,Mason Neck,Mason Neck,Classic,Sidney Sachs
-2017-04-23,Seneca Creek,Clopper Lake,Classic,Nadim Ahmed
-2017-04-16,Cunningham Falls,Manor Area,Classic,Jon Torrance
-2017-04-09,Lake Needwood,Circle Parking Area,Classic,Russ Damtoft
-2017-04-02,Gunston Hall,Main Parking Area,Classic,Gary Smith
-2017-03-26,Patapsco Valley,McKeldin Area,Classic,Alexis Merka
-2017-03-19,Wheaton,Shorefield Area,Classic,Mihai Sirbu
-2017-03-11,Prince William Forest,Camp 5,Night,Ken Walker Jr
-2017-02-26,Patapsco Valley,Avalon Area,Classic,Ted Good
-2017-02-12,Pohick Bay,Camp Wilson,Classic,Hannah Culberg
-2017-02-04,Lake Frank,Lathrop Smith,Bumble,David Onkst
-2017-01-29,Prince William Forest,Pine Grove,Classic,Vido Aleksiev
-2017-01-22,Greenbelt,Sweetgum Parking,Classic,Chris Gross
-2017-01-08,Little Bennett,Nature Center,Classic,Sam Listwak
-2017-01-07,Little Bennett,Nature Center,Night,Sam Listwak
-2016-12-18,Swanson Road,North End,Classic,Craig Shelden
-2016-12-11,Balls Bluff,Edwards Landing Pavilion,Classic,Daniel Heimgartner
-2016-12-04,Patapsco Valley,Catonsville,Classic,Victor Lin
-2016-11-13,Prince William Forest,Williams Ballfield,Stumble,Mark Hicks
-2016-11-06,Great Falls,Great Falls Tavern,Classic,Nadim Ahmed
-2016-10-30,Hemlock Overlook,Hemlock Pavilion,Classic,Jon Torrance
-2016-10-29,Hemlock Overlook,Hemlock Pavilion,Night,Jon Torrance
-2016-10-23,Patuxent River,Barn Parking Area,Goat,Nadim Ahmed
-2016-10-02,Fountainhead,Main Parking Area,Classic,Jon Torrance
-2016-09-11,Lake Accotink,McLaren-Sargent Pavilion,Classic,Victor Lin
-2016-07-30,Mason Neck,Mason Neck,Beginner,David Onkst
-2016-06-12,Jug Bay,Caretaker's House Area,Chase,Ted Good
-2016-05-22,Fountainhead,Bull Run Marina,Classic,Francis Hogle
-2016-05-15,Quantico,Combat Village,Classic,Chris Gross
-2016-05-08,Morven Park,Southern Parking Area,Cowboy,Sam Listwak
-2016-04-30,Patapsco Valley,Granite Area,Classic,Jan Merka
-2016-04-17,Gunston Hall,Main Parking Area,Classic,Tom Strat
-2016-04-10,Seneca Creek,Clopper Lake,Classic,Nadim Ahmed
-2016-04-03,Manassas,Stuart's Hill,Classic,Vido Aleksiev
-2016-03-13,Lake Needwood,Circle Parking Area,Classic,Mihai Sirbu
-2016-03-06,Wheaton,Shorefield Area,Classic,Russ Damtoft
-2016-02-28,Prince William Forest,Camp 5,Classic,Jon Torrance
-2016-02-27,Prince William Forest,Camp 5,Night,Jon Torrance
-2016-02-06,Little Bennett,Nature Center,Bumble,David Onkst
-2016-01-31,Greenbelt,Sweetgum Parking,Classic,Sam Listwak
-2016-01-17,Patapsco Valley,Avalon Area,Classic,Kim Jepsen
-2016-01-03,Fountainhead,Main Parking Area,Classic,Jon Campbell
-2015-12-13,Patapsco Valley,McKeldin Area,Classic,Patti Mace
-2015-12-05,Occoquan,Shelter 4,Classic,Sidney Sachs
-2015-11-22,Cabin John,Playground Parking Area,Classic,Amber Tomas
-2015-11-15,Rosaryville,Pavilion Parking Area,Classic,Jay Gelman
-2015-11-08,Hemlock Overlook,Hemlock Pavilion,Classic,Daniel Heimgartner
-2015-11-07,Hemlock Overlook,Hemlock Pavilion,Night,Daniel Heimgartner
-2015-11-01,Great Falls,Great Falls Tavern,Classic,Peggy Dickison
-2015-10-24,Prince William Forest,Pine Grove,Classic,Tori Campbell
-2015-10-18,Oregon Ridge,Ski Hill,Classic,Ted Good
-2015-09-27,Patuxent River,Barn Parking Area,Classic,Nadim Ahmed
-2015-09-13,Fountainhead,Main Parking Area,Classic,Hannah Culberg
-2015-08-08,Mason Neck,Mason Neck,Beginner,David Onkst
-2015-07-11,Wheaton,Shorefield Area,Beginner,David Onkst
-2015-06-07,Jug Bay,Caretaker's House Area,Chase,Francis Hogle
-2015-05-31,Mason Neck,Mason Neck,Classic,Jon Campbell
-2015-05-17,Balls Bluff,Edwards Landing Pavilion,Classic,Hannah Culberg
-2015-05-10,Pohick Bay,Eagle's Nest,Classic,Tom Strat
-2015-04-26,King's Landing,Main Parking Area,Classic,Ted Good
-2015-04-19,Greenbelt,Sweetgum Parking,Classic,Jay Gelman
-2015-04-12,Lake Needwood,Circle Parking Area,Classic,Kathleen Lennon
-2015-04-04,Manassas,Stuart's Hill,Classic,Daniel Heimgartner
-2015-03-14,Wheaton,Dog Park,Classic,Mihai Sirbu
-2015-03-08,Patapsco Valley,Catonsville,Classic,Kim Jepsen
-2015-02-14,Prince William Forest,Camp 5,Night,Jon Torrance
-2015-02-07,Morven Park,Southern Parking Area,Bumble,David Onkst
-2015-01-25,Little Bennett,Nature Center,Classic,Sam Listwak
-2015-01-18,Patapsco Valley,McKeldin Area,Classic,Jon Torrance
-2015-01-11,Quantico,Combat Village,Classic,John Baker
+﻿date,venue,location,style,designer,url,attack_url
+2019-11-24,Hemlock Overlook,Hemlock Pavilion,Classic,Andrew Komm,,
+2019-11-17,Patuxent River,Barn Parking Area,Stumble,Matt Stout,,http://www.attackpoint.org/eventdetail.jsp/event_45864
+2019-11-10,Balls Bluff,Edwards Landing Pavilion,Classic,Patrick Farley,,http://www.attackpoint.org/eventdetail.jsp/event_45863
+2019-10-27,Great Falls,Great Falls Tavern,Classic,Nadim Ahmed,,http://www.attackpoint.org/eventdetail.jsp/event_45862
+2019-10-13,Gunston Hall,Main Parking Area,Classic,Keg Good,,
+2019-09-29,Swanson Road,North End,Classic,Craig Shelden,,
+2019-09-21,Occoquan,Shelter 3,Classic,Sidney Sachs,,
+2019-09-15,Fountainhead,East,Classic,Charles Carrick,,
+2019-09-08,Cunningham Falls,Manor Area,Classic,Sam Listwak,,
+2019-09-07,Pohick Bay,Pavilion 3,Beginner,David Onkst,,
+2019-07-20,Wheaton,Shorefield Area,Beginner,David Onkst,,
+2019-06-02,Jug Bay,Caretaker's House Area,Chase,Craig Shelden,,
+2019-05-19,Pohick Bay,Shelter 2,Classic,Keg Good,,
+2019-05-05,Gunston Hall,Main Parking Area,Classic,Sidney Sachs,,
+2019-04-28,Lake Needwood,Circle Parking Area,Classic,Michael Dickey,,
+2019-04-20,Manassas,Stuart's Hill,Classic,Gavin Wiese,,
+2019-03-30,Rosaryville,Pavilion Parking Area,Classic,Michael Dickey,,
+2019-03-24,Patapsco Valley,Avalon Area,Classic,Kim Jepsen,,
+2019-03-16,Prince William Forest,Camp 5,Night,Gary Smith,https://www.qocweb.org/events/2019/3/16/pwf-nighto/results,http://www.attackpoint.org/eventdetail.jsp/event_42967
+2019-03-10,Mason Neck,Mason Neck,Classic,Ken Walker Jr,,
+2019-03-03,Cabin John,Playground Parking Area,Classic,Don Fish,,
+2019-02-17,Wheaton,Shorefield Area,Classic,Chris Gross,,
+2019-02-02,Hemlock Overlook,Hemlock Pavilion,Bumble,David Onkst,,http://www.attackpoint.org/eventdetail.jsp/event_42681
+2019-01-27,Patapsco Valley,Catonsville,Classic,Ted Good,,
+2019-01-06,Fountainhead,West,Classic,Victor Lin,,
+2018-12-09,Seneca Creek,Smokey Glen Farm,Classic,Nadim Ahmed,,
+2018-12-02,Prince William Forest,Pine Grove,Classic,Mark Hicks,,
+2018-12-01,Little Bennett,Prescott Road Parking Area,Classic,Boris Granovskiy,,
+2018-11-11,Great Falls,Great Falls Tavern,Classic,Sam Listwak,,
+2018-11-04,Quantico,Hangman Tree,Classic,Daniel Heimgartner,,
+2018-11-03,Fountainhead,Central,Classic,Francis Hogle,,
+2018-10-21,Balls Bluff,Edwards Landing Pavilion,Classic,Tom Strat,,
+2018-10-07,Patuxent River,Barn Parking Area,Classic,Craig Shelden,,
+2018-09-16,Occoquan,Shelter 4,Classic,Charles Carrick,,
+2018-09-08,Pohick Bay,Pavilion 3,Beginner,David Onkst,,
+2018-07-14,Wheaton,Shorefield Area,Beginner,David Onkst,,
+2018-06-10,Cunningham Falls,Manor Area,Classic,Jon Torrance,,
+2018-06-03,Jug Bay,Caretaker's House Area,Chase,Craig Shelden,,
+2018-05-20,Fountainhead,Far West,Classic,Vido Aleksiev,,
+2018-05-13,Lake Needwood,Circle Parking Area,Classic,Peggy Dickison,,
+2018-05-06,Pohick Bay,Eagle's Nest,Classic,Alexis Merka,,
+2018-04-29,Rosaryville,Pavilion Parking Area,Classic,Russ Damtoft,,
+2018-04-21,Patapsco Valley,Granite Area,Classic,Mark Mace,,
+2018-04-15,Mason Neck,Mason Neck,Classic,Jon Torrance,,
+2018-04-08,Gunston Hall,Main Parking Area,Classic,Ken Walker Jr,,
+2018-03-25,Patapsco Valley,Avalon Area,Classic,Alexis Merka,,
+2018-03-18,Manassas,Stuart's Hill,Classic,Vido Aleksiev,,
+2018-03-11,Wheaton,Shorefield Area,Classic,Nadim Ahmed,,http://www.attackpoint.org/eventdetail.jsp/event_38787
+2018-03-04,Little Bennett,Prescott Road Parking Area,Classic,Sam Listwak,,
+2018-02-11,Seneca Creek,Clopper Lake,Classic,Michael Dickey,,
+2018-02-03,Patapsco Valley,Catonsville,Bumble,David Onkst,,
+2018-01-28,Fountainhead,West,Classic,Daniel Heimgartner,,
+2018-01-21,Patapsco Valley,McKeldin Area,Classic,Kim Jepsen,,
+2018-01-07,Greenbelt,Sweetgum Parking,Classic,Victor Lin,,
+2017-12-16,Cabin John,Playground Parking Area,Classic,Michael Dickey,,
+2017-11-19,Great Falls,Great Falls Tavern,Classic,Sam Listwak,,
+2017-10-29,Prince William Forest,Pine Grove,Classic,Nadim Ahmed,,
+2017-10-15,Patuxent River,Barn Parking Area,Classic,Craig Shelden,,
+2017-09-24,Swanson Road,North End,Classic,Craig Shelden,,
+2017-09-17,Hemlock Overlook,Hemlock Pavilion,Classic,Tom Nolan,,
+2017-08-05,Mason Neck,Mason Neck,Beginner,David Onkst,,
+2017-07-30,Wheaton,Shorefield Area,Beginner,David Onkst,,
+2017-06-04,Jug Bay,Caretaker's House Area,Chase,Peggy Dickison,,
+2017-05-20,Fountainhead,Bull Run Marina,Classic,Keg Good,,
+2017-05-14,Rosaryville,Pavilion Parking Area,Classic,Tom Nolan,,
+2017-05-06,Patapsco Valley,Granite Area,Classic,Kim Jepsen,,
+2017-04-30,Mason Neck,Mason Neck,Classic,Sidney Sachs,,
+2017-04-23,Seneca Creek,Clopper Lake,Classic,Nadim Ahmed,,
+2017-04-16,Cunningham Falls,Manor Area,Classic,Jon Torrance,,
+2017-04-09,Lake Needwood,Circle Parking Area,Classic,Russ Damtoft,,
+2017-04-02,Gunston Hall,Main Parking Area,Classic,Gary Smith,,
+2017-03-26,Patapsco Valley,McKeldin Area,Classic,Alexis Merka,,
+2017-03-19,Wheaton,Shorefield Area,Classic,Mihai Sirbu,,
+2017-03-11,Prince William Forest,Camp 5,Night,Ken Walker Jr,https://www.qocweb.org/events/2017/3/11/pwf-happyland/results,http://www.attackpoint.org/eventdetail.jsp/event_34105
+2017-02-26,Patapsco Valley,Avalon Area,Classic,Ted Good,,
+2017-02-12,Pohick Bay,Camp Wilson,Classic,Hannah Culberg,,
+2017-02-04,Lake Frank,Lathrop Smith,Bumble,David Onkst,,http://www.attackpoint.org/eventdetail.jsp/event_34766
+2017-01-29,Prince William Forest,Pine Grove,Classic,Vido Aleksiev,,
+2017-01-22,Greenbelt,Sweetgum Parking,Classic,Chris Gross,,
+2017-01-08,Little Bennett,Nature Center,Classic,Sam Listwak,,
+2017-01-07,Little Bennett,Nature Center,Night,Sam Listwak,,
+2016-12-18,Swanson Road,North End,Classic,Craig Shelden,,
+2016-12-11,Balls Bluff,Edwards Landing Pavilion,Classic,Daniel Heimgartner,,
+2016-12-04,Patapsco Valley,Catonsville,Classic,Victor Lin,,
+2016-11-13,Prince William Forest,Williams Ballfield,Stumble,Mark Hicks,,http://www.attackpoint.org/eventdetail.jsp/event_34055
+2016-11-06,Great Falls,Great Falls Tavern,Classic,Nadim Ahmed,,http://www.attackpoint.org/eventdetail.jsp/event_34054
+2016-10-30,Hemlock Overlook,Hemlock Pavilion,Classic,Jon Torrance,,http://www.attackpoint.org/eventdetail.jsp/event_34053
+2016-10-29,Hemlock Overlook,Hemlock Pavilion,Night,Jon Torrance,,http://www.attackpoint.org/eventdetail.jsp/event_34053
+2016-10-23,Patuxent River,Barn Parking Area,Goat,Nadim Ahmed,,http://www.attackpoint.org/eventdetail.jsp/event_34768
+2016-10-02,Fountainhead,Main Parking Area,Classic,Jon Torrance,,http://www.attackpoint.org/eventdetail.jsp/event_34051
+2016-09-11,Lake Accotink,McLaren-Sargent Pavilion,Classic,Victor Lin,,http://www.attackpoint.org/eventdetail.jsp/event_34050
+2016-07-30,Mason Neck,Mason Neck,Beginner,David Onkst,,
+2016-06-12,Jug Bay,Caretaker's House Area,Chase,Ted Good,,http://www.attackpoint.org/eventdetail.jsp/event_28202
+2016-05-22,Fountainhead,Bull Run Marina,Classic,Francis Hogle,,
+2016-05-15,Quantico,Combat Village,Classic,Chris Gross,,
+2016-05-08,Morven Park,Southern Parking Area,Cowboy,Sam Listwak,,
+2016-04-30,Patapsco Valley,Granite Area,Classic,Jan Merka,,
+2016-04-17,Gunston Hall,Main Parking Area,Classic,Tom Strat,,
+2016-04-10,Seneca Creek,Clopper Lake,Classic,Nadim Ahmed,,
+2016-04-03,Manassas,Stuart's Hill,Classic,Vido Aleksiev,,
+2016-03-13,Lake Needwood,Circle Parking Area,Classic,Mihai Sirbu,,
+2016-03-06,Wheaton,Shorefield Area,Classic,Russ Damtoft,,
+2016-02-28,Prince William Forest,Camp 5,Classic,Jon Torrance,https://www.qocweb.org/events/2016/2/28/prince-william-forest-classic-day-event/results,http://www.attackpoint.org/eventdetail.jsp/event_28199
+2016-02-27,Prince William Forest,Camp 5,Night,Jon Torrance,https://www.qocweb.org/events/2016/2/27/prince-william-forest-nighto/results,http://www.attackpoint.org/eventdetail.jsp/event_28199
+2016-02-06,Little Bennett,Nature Center,Bumble,David Onkst,,http://www.attackpoint.org/eventdetail.jsp/event_28194
+2016-01-31,Greenbelt,Sweetgum Parking,Classic,Sam Listwak,,
+2016-01-17,Patapsco Valley,Avalon Area,Classic,Kim Jepsen,,
+2016-01-03,Fountainhead,Main Parking Area,Classic,Jon Campbell,,
+2015-12-13,Patapsco Valley,McKeldin Area,Classic,Patti Mace,,
+2015-12-05,Occoquan,Shelter 4,Classic,Sidney Sachs,,
+2015-11-22,Cabin John,Playground Parking Area,Classic,Amber Tomas,,
+2015-11-15,Rosaryville,Pavilion Parking Area,Classic,Jay Gelman,,
+2015-11-08,Hemlock Overlook,Hemlock Pavilion,Classic,Daniel Heimgartner,,
+2015-11-07,Hemlock Overlook,Hemlock Pavilion,Night,Daniel Heimgartner,,
+2015-11-01,Great Falls,Great Falls Tavern,Classic,Peggy Dickison,,
+2015-10-24,Prince William Forest,Pine Grove,Classic,Tori Campbell,,
+2015-10-18,Oregon Ridge,Ski Hill,Classic,Ted Good,,
+2015-09-27,Patuxent River,Barn Parking Area,Classic,Nadim Ahmed,,
+2015-09-13,Fountainhead,Main Parking Area,Classic,Hannah Culberg,,
+2015-08-08,Mason Neck,Mason Neck,Beginner,David Onkst,,
+2015-07-11,Wheaton,Shorefield Area,Beginner,David Onkst,,http://www.attackpoint.org/eventdetail.jsp/event_28291
+2015-06-07,Jug Bay,Caretaker's House Area,Chase,Francis Hogle,,http://www.attackpoint.org/eventdetail.jsp/event_21266
+2015-05-31,Mason Neck,Mason Neck,Classic,Jon Campbell,,
+2015-05-17,Balls Bluff,Edwards Landing Pavilion,Classic,Hannah Culberg,,
+2015-05-10,Pohick Bay,Eagle's Nest,Classic,Tom Strat,,
+2015-04-26,King's Landing,Main Parking Area,Classic,Ted Good,,
+2015-04-19,Greenbelt,Sweetgum Parking,Classic,Jay Gelman,,http://www.attackpoint.org/eventdetail.jsp/event_21222
+2015-04-12,Lake Needwood,Circle Parking Area,Classic,Kathleen Lennon,,
+2015-04-04,Manassas,Stuart's Hill,Classic,Daniel Heimgartner,,
+2015-03-14,Wheaton,Dog Park,Classic,Mihai Sirbu,,
+2015-03-08,Patapsco Valley,Catonsville,Classic,Kim Jepsen,,
+2015-02-14,Prince William Forest,Camp 5,Night,Jon Torrance,,http://www.attackpoint.org/eventdetail.jsp/event_21220
+2015-02-07,Morven Park,Southern Parking Area,Bumble,David Onkst,,http://www.attackpoint.org/eventdetail.jsp/event_21219
+2015-01-25,Little Bennett,Nature Center,Classic,Sam Listwak,,
+2015-01-18,Patapsco Valley,McKeldin Area,Classic,Jon Torrance,,
+2015-01-11,Quantico,Combat Village,Classic,John Baker,,
+2014-12-13,Patapsco Valley,Granite Area,Classic,Peggy Dickison,,
+2014-12-07,Prince William Forest,Pine Grove,Classic,Vido Aleksiev,,
+2014-11-22,Cabin John,Shirley Povich Field,Classic,Boris Granovskiy,,
+2014-11-02,Great Falls,Great Falls Tavern,Classic,Sam Listwak,,
+2014-09-27,Swanson Road,North End,Classic,Craig Shelden,,
+2014-09-21,Lake Accotink,Lower Parking Lot,Classic,Gary Smith,,
+2014-09-14,Seneca Creek,Clopper Lake,Classic,Nadim Ahmed,,
+2014-09-07,Occoquan,Shelter 4,Classic,Sidney Sachs,,
+2014-06-01,Jug Bay,Caretaker's House Area,Chase,Nadim Ahmed,,
+2014-05-18,Hemlock Overlook,Hemlock Pavilion,Classic,Jon Torrance,,
+2014-05-11,Patapsco Valley,McKeldin Area,Classic,Dan Quinn,,http://www.attackpoint.org/eventdetail.jsp/event_17338
+2014-05-04,Mason Neck,Mason Neck,Classic,Gary Smith,,
+2014-04-13,Rosaryville,Pavilion Parking Area,Classic,Ken Walker Jr,,
+2014-04-05,Pohick Bay,Pavilion 3,Classic,Sidney Sachs,,
+2014-03-30,Patapsco Valley,Catonsville,Classic,Ted Good,,
+2014-03-16,Prince William Forest,Williams Ballfield,Classic,Francis Hogle,,
+2014-03-09,Little Bennett,Nature Center,Classic,Mihai Sirbu,,
+2014-03-08,Little Bennett,Nature Center,Night,Mihai Sirbu,,
+2014-03-02,Patapsco Valley,Avalon Area,Classic,Mike Stasiowski,,
+2014-02-22,Cabin John,Shirley Povich Field,Classic,Russ Damtoft,,
+2014-02-09,Manassas,Stuart's Hill,Classic,Tom Strat,,
+2014-02-01,Greenbelt,Sweetgum Parking,Bumble,David Onkst,,
+2014-01-26,Quantico,Combat Village,Classic,Bob Turbyfill,,
+2014-01-11,Patapsco Valley,Granite Area,Classic,Kim Jepsen,,
+2014-01-05,Patuxent River,Barn Parking Area,Classic,Patti Mace,,
+2013-12-15,Wheaton,Shorefield Area,Classic,Jon Torrance,,
+2013-11-24,Great Falls,Great Falls Tavern,Classic,Sam Listwak,,
+2013-11-03,Morven Park,Sports Field Parking,Classic,Sam Listwak,https://www.qocweb.org/events/2013/11/3/morven-park/results,
+2013-10-27,Prince William Forest,Telegraph Road Parking,Classic,Amber Tomas,,
+2013-10-06,Oregon Ridge,Nature Center,Stumble,Francis Hogle,,
+2013-09-22,Lake Accotink,Lower Parking Lot,Classic,Victor Lin,,
+2013-09-15,Lake Needwood,Circle Parking Area,Classic,Peggy Dickison,,
+2013-09-08,Mason Neck,Mason Neck,Beginner,David Onkst,,
+2013-09-01,Wheaton,Shorefield Area,Beginner,David Onkst,,
+2013-06-02,Jug Bay,Caretaker's House Area,Chase,Ted Good,,http://www.attackpoint.org/eventdetail.jsp/event_11280
+2013-05-19,Mason Neck,Mason Neck,Classic,Bjorn Skjaevestad,,http://www.attackpoint.org/eventdetail.jsp/event_11279
+2013-05-05,Pohick Bay,Pavilion 3,Classic,Amber Tomas,,http://www.attackpoint.org/eventdetail.jsp/event_11289
+2013-05-04,Morven Park,Southern Parking Area,Night,Kathleen Lennon,,http://www.attackpoint.org/eventdetail.jsp/event_13292
+2013-04-28,Patapsco Valley,Rockburn Branch,Classic,Tom Nolan,,http://www.attackpoint.org/eventdetail.jsp/event_11284
+2013-04-20,Rosaryville,Pavilion Parking Area,Classic,Mark Mace,,http://www.attackpoint.org/eventdetail.jsp/event_11275
+2013-04-14,Quantico,Combat Village,Classic,Don Davis,,
+2013-04-07,Cabin John,Playground Parking Area,Classic,Peggy Dickison,,
+2013-03-23,Little Bennett,Nature Center,Classic,Sam Listwak,,
+2013-03-17,Manassas,Stuart's Hill,Classic,Tom Strat,,
+2013-03-09,Patapsco Valley,Granite Area,Classic,Jan Merka,,
+2013-02-24,Prince William Forest,Telegraph Road Parking,Classic,Karla Hulett,,
+2013-02-10,Occoquan,Shelter 4,Classic,Jon Torrance,,
+2013-02-02,Wheaton,Shorefield Area,Bumble,David Onkst,,
+2013-01-20,Greenbelt,Sweetgum Parking,Classic,Russ Damtoft,,
+2013-01-13,Fountainhead,Main Parking Area,Classic,Victor Lin,,
+2013-01-06,Patapsco Valley,Mckeldin Area,Classic,Mark Mace,,
+2012-12-16,Oregon Ridge,Nature Center,Classic,Tom Nolan,,
+2012-12-08,Prince William Forest,Camp 5,Classic,Linda Ferguson,,
+2012-11-18,Great Falls,Great Falls Tavern,Classic,Sam Listwak,,
+2012-11-04,Patuxent River,Barn Parking Area,Classic,Francis Hogle,,
+2012-10-28,Hemlock Overlook,Hemlock Pavilion,Classic,Gary Smith,,
+2012-10-14,Swanson Road,North End,Classic,Dan Quinn,,
+2012-09-30,Meadowood,West Parking Area,Classic,Sidney Sachs,,
+2012-09-23,Lake Needwood,Circle Parking Area,Classic,Nadim Ahmed,,
+2012-09-15,Lake Accotink,Lower Parking Lot,Classic,Jon Torrance,,
+2012-08-18,Wheaton,Shorefield Area,Beginner,David Onkst,,
+2012-06-03,Jug Bay,Caretaker's House Area,Chase,Francis Hogle,,
+2012-05-20,Patapsco Valley,Glen Artney,Classic,Ted Good,,
+2012-05-12,Balls Bluff,Edwards Landing Pavilion,Classic,Don Davis,,
+2012-04-28,Rosaryville,Pavilion Parking Area,Classic,Patti Mace,https://www.qocweb.org/events/2012/4/28/rosaryville/results,
+2012-04-22,Mason Neck,Mason Neck,Classic,Tom Strat,,
+2012-03-31,Fountainhead,Main Parking Area,Classic,Dave Hauver,,
+2012-03-25,Little Bennett,Nature Center,Classic,Sam Listwak,,
+2012-03-24,Little Bennett,Nature Center,Night,Sam Listwak,,
+2012-03-03,Patuxent River,Barn Parking Area,Classic,Peggy Dickison,,
+2012-02-26,Pohick Bay,Pavilion 3,Classic,Karla Hulett,,
+2012-02-12,Greenbelt,Sweetgum Parking,Classic,Tom Nolan,,
+2012-01-29,Prince William Forest,Pine Grove,Classic,Martin Farenfield,,
+2012-01-08,Patapsco Valley,McKeldin Area,Classic,Mark Mace,,
