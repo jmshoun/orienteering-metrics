@@ -52,6 +52,7 @@ course.length.summary.df <- classic.leg.summary.df %>%
 
 ggplot(course.length.summary.df) +
     aes(x=course_clean) +
+    geom_hline(yintercept=0) +
     geom_linerange(aes(ymin=q05, ymax=q95), alpha=0.7) +
     geom_linerange(aes(ymin=q25, ymax=q75), alpha=0.9, size=2) +
     geom_point(aes(y=mu), color="red",  size=1.5) +
@@ -129,3 +130,84 @@ longest.course.df <- classic.leg.summary.df %>%
 
 knitr::kable(longest.course.df)
 ```
+
+# Course Slope
+
+## Slope Description
+
+Besides length, another salient characteristic of a course is how hilly it is. Typically, this is expressed as "climb", an estimate of the number of meters of elevation gain a runner will face on a near-optimal course route. To some extent, course distance is a bit of a fiction. The distance quoted for a course is the straight-line distance between each of the control points on the course, or the minimum possible distance that must be covered. In reality, the actual distance covered by any competitor is higher, perhaps significantly so: the actual route that a competitor takes from one control point to another will likely deviate for the sake of faster terrain, easier navigation, or both. In spite of these known limitations, course distance is still a useful metric.
+
+Course climb is even more problematic than course climb. The traditional method for computing course climb is for the course setter to lay out a piece of string on a course map along (what is in their view) the optimal route, count the number of contour lines crossed by the string in an uphill direction, and sum them for an estimate of course distance.  This process involves significantly more subjectivity and room for error than distance measurements. However, despite its acknowledged imperfections, this measure of climb is better than any other readily available alternative, and is still useful for assessing courses.
+
+Climb for each course is typically reported to the nearest 5 meters. Unsurprisingly, longer courses tend to have more climb associated with them, by virtue of the fact that they cover more distance. We can normalize for course distance by computing course slope: the ratio of climb (in meters) to course length (in meters). We must remember that slope represents meters of climb per meter of horizontal distance, and completely disregards vertical distance descended. Given that most orienteering courses have start and finish very close to each other, we must multiply quoted slope values by 2 to get the average terrain slope. For example, a 2km course with a 1km climb at a 10% grade followed by a 1km descent at a 10% grade would have 100m of climb over 2km of horizonal distance for a quoted slope of 0.05.
+
+The plot below shows the distribution of course slope by course color. Analogously to the length plot shown previously, the dot shows the mean course slope, the heavy line shows the range from the 25th percentile to 75th percentile, and the lighter line shows the range from the 5th to the 95th percentile.
+
+```{r course_slope_plot, echo=FALSE}
+course.slope.summary.df <- classic.leg.summary.df %>% 
+    mutate(slope = climb / length) %>% 
+    group_by(course_clean) %>% 
+    summarize(mu = mean(slope),
+              q05 = quantile(slope, 0.05),
+              q25 = quantile(slope, 0.25),
+              q75 = quantile(slope, 0.75),
+              q95 = quantile(slope, 0.95))
+
+ggplot(course.slope.summary.df) +
+    aes(x=course_clean) +
+    geom_hline(yintercept=0) +
+    geom_linerange(aes(ymin=q05, ymax=q95), alpha=0.7) +
+    geom_linerange(aes(ymin=q25, ymax=q75), alpha=0.9, size=2) +
+    geom_point(aes(y=mu), color="red",  size=1.5) +
+    coord_cartesian(ylim=c(0, 0.06)) +
+    labs(x="Course Color", y="Course Slope") +
+    theme_bw()
+```
+
+We can see that mean course slope gradually increases over the recreational courses (from White to Orange), then levels off or slightly declines for the advanced courses (Brown to Blue).
+
+## Flattest and Steepest Courses
+
+Just as we did with the shortest and longest courses, we can for fun look for the flattest and steepest courses by color in our data.
+
+The flattest courses by color are shown in the table below.
+
+```{r flattest_course, echo=FALSE}
+flattest.course.df <- classic.leg.summary.df %>% 
+    mutate(slope = climb / length) %>% 
+    group_by(course_clean) %>% 
+    arrange(slope) %>% 
+    slice(1) %>% 
+    ungroup() %>% 
+    mutate(length = length / 1000,
+           slope = round(slope, 4)) %>% 
+    select(Color=course_clean, `Event Date`=event_date, Venue=location, Slope=slope,
+           Climb=climb, `Length (km)`=length, `Course Setter`=course_setter)
+
+knitr::kable(flattest.course.df)
+```
+
+It comes as little surprise that five of the seven flattest courses are at Mason Neck, a notoriously flat venues. The only other venues on the list are Gunston Hall and Manassas, both of which have large, flat, open fields that recreational courses often use heavily.
+
+The plot below shows the steepest course by color in the data:
+
+```{r steepest_course, echo=FALSE}
+steepest.course.df <- classic.leg.summary.df %>% 
+    mutate(slope = climb / length) %>% 
+    group_by(course_clean) %>% 
+    arrange(desc(slope)) %>% 
+    slice(1) %>% 
+    ungroup() %>% 
+    mutate(length = length / 1000,
+           slope = round(slope, 4)) %>% 
+    select(Color=course_clean, `Event Date`=event_date, Venue=location, Slope=slope,
+           Climb=climb, `Length (km)`=length, `Course Setter`=course_setter)
+
+knitr::kable(steepest.course.df)
+```
+
+We see here that unlike mean course slope, which tends to increase as a function of color, superlative course slope decreases as a function of course color. In other words, the steepest course on record is Yellow, not Brown or Red. This may be contrary to expectation, but there is a good explanation for this: we expect to see more variation in course slope for shorter courses than longer courses. For any given venue, some portions of the park are steeper than others. A short course may happen to be concentrated in the steeper or flatter portions of the park, and therefore have a more extreme slope rating. By contrast, longer courses must cover a greater portion of the park, and therefore necessarily be closer to the average slope for the park as a whole. Therefore, shorter courses are more likely to be exceptionally steep or exceptionally flat.
+
+As well, there is more variety in terms of the venues with the steepest courses: four venues appear on the list, with no venue taking more than three spots.
+
+Incidentally, we could also look for the courses with the most or least total climb, but as it turns out, such lists are very similar to the steepest and flattest lists shown.
