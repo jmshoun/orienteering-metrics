@@ -1,0 +1,131 @@
+---
+title: "Orienteering Course Exploratory Data Analysis"
+author: "Mark Shoun"
+date: "13 December 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("_libraries.R")
+source("load/load_data.R")
+```
+
+# Data Overview
+
+This is the first in a series of posts analyzing orienteering data. Orienteering is a sport that involves racing from point to point over unfamiliar terrain while using only a map and compass to navigate. The most common type of orienteering event is on foot (referred to as foot-O), but there are variants for mountain biking and cross-countrying skiing. Most foot-O courses consist of a start and finish separated by 7-20 intermediate control points which must be visited in a specified order. Competitors start running at staggered intervals, so that each person must navigate the course for themselves.
+
+Orienteering events in the format described above are referred to as "classic" events. Non-classic events may have variant rules like mass starts; allowing competitors some choice over what order to visit control points; scoring based on number of control points visited, rather than elapsed time; significantly shorter or longer distances between control points than is customary; or other such variants. In these analyses, we focus on classic events for the sake of consistency and tractability.
+
+The data for this analysis comes from results of events organized by the Quantico Orienteering Club, which is based in the greater Washington, DC metropolitan area. The club has posted results for `r nrow(event.df)` events from January 2012 through the present, of which `r length(unique(classic.leg.summary.df$event_date))` events included sufficiently detailed data for at least one classic course for analytical purposes.
+
+# Course Summary Statistics
+
+A typical classic orienteering event may have up to seven separate courses of varying length and difficulty. In the United States, orienteering courses tend to follow a standard naming scheme based on colors. The simplest and shortest course is White, followed by Yellow, Orange, Brown, Green, Red, and Blue. The Brown through Blue courses are generally considered "advanced" courses; these courses generally pose similar degrees of navigational difficulty and differ mostly on length and degree of physical difficulty.
+
+In our data set, we have data on 975 separate courses. The table below shows a summary of the number of courses in the data set, as well as a brief summary of a course's typical features.
+
+```{r courses_by_color, echo=FALSE}
+classic.leg.summary.df %>% 
+    mutate(Color=course_clean) %>% 
+    group_by(Color) %>% 
+    summarize(`Number of Courses` = n(),
+              `Mean Length (km)` = round(mean(length) / 1000, 2),
+              `Mean Climb (m)` = round(mean(climb)),
+              `Mean Slope` = round(mean(climb / length), 3),
+              `Mean Controls` = round(mean(control_points), 1),
+              `Mean Leg Distance` = round(sum(length) / sum(control_points + 1))) %>%
+    knitr::kable()
+```
+
+# Course Length
+
+The plot below shows the distribution of course length by course color. The dot shows the mean course length, the heavy line shows the range from the 25th percentile to 75th percentile, and the lighter line shows the range from the 5th to the 95th percentile.
+
+```{r course_length_plot, echo=FALSE}
+course.length.summary.df <- classic.leg.summary.df %>% 
+    group_by(course_clean) %>% 
+    summarize(mu = mean(length),
+              q05 = quantile(length, 0.05),
+              q25 = quantile(length, 0.25),
+              q75 = quantile(length, 0.75),
+              q95 = quantile(length, 0.95))
+
+ggplot(course.length.summary.df) +
+    aes(x=course_clean) +
+    geom_linerange(aes(ymin=q05, ymax=q95), alpha=0.7) +
+    geom_linerange(aes(ymin=q25, ymax=q75), alpha=0.9, size=2) +
+    geom_point(aes(y=mu), color="red",  size=1.5) +
+    labs(x="Course Color", y="Course Distance (m)") +
+    theme_bw()
+```
+
+We can see that, as expected, the mean course length generally increases with course difficulty, as does the mean course climb (a measure of the expected elevation gain a competitor will face on a near-optimal route). The least overlap between courses of consecutive colors is between Brown and Green: almost every Green course is longer than almost any Brown course.
+
+Brown courses are slightly shorter than Orange courses on average, with significantly fewer control points. This is by design: Brown courses are more difficult to navigate than Orange courses (which is partially reflected in the greater average distance between control points), but are not intended to be more physically challenging than Orange courses.
+
+## Per-Event Course Length Comparison
+
+The comparison above is useful, but it relies on averages over many events. Some events are at smaller venues, which dictate shorter course lengths across the board. (In fact, some events omit Blue courses entirely when there is insufficient space.) Therefore, a cleaner comparison to see how often the Brown course at a given event is shorter than the Orange course at the same event. This controls for differences in course length due to venue, course designer proclivities, and other external factors. We can also perform this comparison for other pairs of courses besides Orange and Brown. The results of this comparison are shown in the table below.
+
+```{r course_inversion_rate, echo=FALSE}
+event.color.df <- classic.leg.summary.df %>% 
+    dcast(event_date ~ course_clean, value.var="length")
+
+inversion.rate.summary.df <- data.frame(
+    easier = c("White", "Yellow", "Orange", "Brown", "Green", "Red", "Yellow", "Orange"),
+    harder = c("Yellow", "Orange", "Brown", "Green", "Red", "Blue", "Brown", "Green"),
+    stringsAsFactors = FALSE
+)
+
+inversions <- mapply(
+    function(easy, hard) {
+        comparison.df <- event.color.df[!(is.na(event.color.df[[easy]]) 
+                                          | is.na(event.color.df[[hard]])), ]
+        c(nrow(comparison.df), sum(comparison.df[[easy]] > comparison.df[[hard]]))
+    }, inversion.rate.summary.df$easier, inversion.rate.summary.df$harder
+)
+
+inversion.rate.summary.df <- inversion.rate.summary.df %>% 
+    rename(`Easier Course` = easier, `Harder Course` = harder) %>% 
+    mutate(`Number of Comparisons` = inversions[1, ],
+           `Times Harder was Shorter` = inversions[2, ],
+           `Inversion Rate` = sprintf("%.1f%%", 100 * inversions[2, ] / inversions[1, ]))
+
+knitr::kable(inversion.rate.summary.df)
+```
+
+More often than not, the Brown course is shorter than the Orange course. Additionally, the Yellow course is shorter than the White course about 5% of the time. This is slightly surprising, but not shocking: the primary differentiation between White and Yellow is ease of navigation. There are no recorded instances of Yellow being longer than Orange. Furthermore, we see that Brown is always shorter than Green, which in turn is always shorter than Red, which again in turn is always shorter than Blue. This makes sense: as noted earlier, the primary differentiator between advanced courses is distance, so the idea of a Brown longer than a Green or a Red longer than a Blue is nonsensical.
+
+Finally, we see a few instances of unusual distance inversions across two course difficulty levels: twice when Yellow was longer than Brown (2015-04-12 at Lake Needwood, 3.19km Yellow vs 3.09km Brown; 2017-02-26 at Patapsco - Avalon, 4.27km Yellow vs 3.87km Brown), and once when Orange was longer than Green (2014-03-16 at Prince William Forest, 4.92km Orange vs 4.83km Green)!
+
+## Shortest and Longest Courses
+
+For fun, we can take a look at the shortest and longest courses of each color. The table below shows the shortest course for each color:
+
+```{r shortest_course, echo=FALSE}
+shortest.course.df <- classic.leg.summary.df %>% 
+    group_by(course_clean) %>% 
+    arrange(length) %>% 
+    slice(1) %>% 
+    ungroup() %>% 
+    mutate(length = length / 1000) %>% 
+    select(Color=course_clean, `Event Date`=event_date, Venue=location, `Length (km)`=length, Climb=climb,
+           `Control Points`=control_points, `Course Setter`=course_setter)
+
+knitr::kable(shortest.course.df)
+```
+
+The table below shows the longest course for each color:
+
+```{r longest_course, echo=FALSE}
+longest.course.df <- classic.leg.summary.df %>% 
+    group_by(course_clean) %>% 
+    arrange(desc(length)) %>% 
+    slice(1) %>% 
+    ungroup() %>% 
+    mutate(length = length / 1000) %>% 
+    select(Color=course_clean, `Event Date`=event_date, Venue=location, `Length (km)`=length, Climb=climb,
+           `Control Points`=control_points, `Course Setter`=course_setter)
+
+knitr::kable(longest.course.df)
+```
