@@ -71,19 +71,19 @@ def get_event_url(event_date):
 
 def pull_event_details(event_row):
     event_date = event_row[0]
-    event_location = event_row[1]
-    base_url = event_row[5]
-    known_attack_point_url = event_row[6]
+    event_venue = event_row[1]
+    base_url = event_row[4]
+    known_attack_point_url = event_row[5]
     clean_url = get_event_url(event_date) if base_url is None else base_url
 
     time.sleep(1)
     response = requests.get(clean_url)
     derived_attack_point_url, course_rows, start_rows = pull_event_page(response.text)
-    full_course_rows = [(event_date, event_location, *row) for row in course_rows]
-    full_start_rows = [(event_date, event_location, *row) for row in start_rows]
+    full_course_rows = [(event_date, event_venue, *row) for row in course_rows]
+    full_start_rows = [(event_date, event_venue, *row) for row in start_rows]
 
     attack_point_url = derived_attack_point_url if known_attack_point_url is None \
             else known_attack_point_url
-    event_info = (*event_row[:5], clean_url, attack_point_url)
+    event_info = (*event_row[:4], clean_url, attack_point_url)
     leg_rows, split_rows = attack_point.pull_event_details(event_info)
     return (event_info, full_course_rows, full_start_rows, leg_rows, split_rows)

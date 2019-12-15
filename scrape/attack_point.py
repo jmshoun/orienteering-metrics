@@ -31,17 +31,17 @@ def pull_all_splits(table):
 
 
 def pull_leg_rows(event_info, course_name, page_soup):
-    event_date, location, *_ = event_info
+    event_date, venue, *_ = event_info
     split_table = page_soup.find("table", class_="splittable")
     legs = pull_legs(split_table)
-    return [(event_date, location, course_name, leg_number + 1, distance)
+    return [(event_date, venue, course_name, leg_number + 1, distance)
             for leg_number, distance in enumerate(legs)]
 
 
 def pull_split_rows(event_info, course_name, page_soup):
-    event_date, location, *_ = event_info
+    event_date, venue, *_ = event_info
     split_table = page_soup.find("table", class_="splittable")
-    return [(event_date, location, course_name, finish_order + 1, leg_number + 1, time)
+    return [(event_date, venue, course_name, finish_order + 1, leg_number + 1, time)
             for finish_order, splits in enumerate(pull_all_splits(split_table))
             for leg_number, time in enumerate(splits)]
 
