@@ -110,7 +110,7 @@ shortest.course.df <- classic.leg.summary.df %>%
     slice(1) %>% 
     ungroup() %>% 
     mutate(length = length / 1000) %>% 
-    select(Color=course_clean, `Event Date`=event_date, Venue=location, `Length (km)`=length, Climb=climb,
+    select(Color=course_clean, `Event Date`=event_date, Venue=venue, `Length (km)`=length, Climb=climb,
            `Control Points`=control_points, `Course Setter`=course_setter)
 
 knitr::kable(shortest.course.df)
@@ -125,7 +125,7 @@ longest.course.df <- classic.leg.summary.df %>%
     slice(1) %>% 
     ungroup() %>% 
     mutate(length = length / 1000) %>% 
-    select(Color=course_clean, `Event Date`=event_date, Venue=location, `Length (km)`=length, Climb=climb,
+    select(Color=course_clean, `Event Date`=event_date, Venue=venue, `Length (km)`=length, Climb=climb,
            `Control Points`=control_points, `Course Setter`=course_setter)
 
 knitr::kable(longest.course.df)
@@ -181,7 +181,7 @@ flattest.course.df <- classic.leg.summary.df %>%
     ungroup() %>% 
     mutate(length = length / 1000,
            slope = round(slope, 4)) %>% 
-    select(Color=course_clean, `Event Date`=event_date, Venue=location, Slope=slope,
+    select(Color=course_clean, `Event Date`=event_date, Venue=venue, Slope=slope,
            Climb=climb, `Length (km)`=length, `Course Setter`=course_setter)
 
 knitr::kable(flattest.course.df)
@@ -200,7 +200,7 @@ steepest.course.df <- classic.leg.summary.df %>%
     ungroup() %>% 
     mutate(length = length / 1000,
            slope = round(slope, 4)) %>% 
-    select(Color=course_clean, `Event Date`=event_date, Venue=location, Slope=slope,
+    select(Color=course_clean, `Event Date`=event_date, Venue=venue, Slope=slope,
            Climb=climb, `Length (km)`=length, `Course Setter`=course_setter)
 
 knitr::kable(steepest.course.df)

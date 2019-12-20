@@ -1,5 +1,5 @@
 raw.course.df <- read_csv("../data/courses.csv",
-                       col_names = c("event_date", "location", "course", "length",
+                       col_names = c("event_date", "venue", "course", "length",
                                      "climb", "control_points"))
 
 # The initial data pull is pretty dumb, by design. There are a fair number of formatting
@@ -29,12 +29,12 @@ course.df <- raw.course.df %>%
            climb = as.numeric(str_split_fixed(climb, " ", 2)[, 1])) %>%
     # Course type cleanup
     mutate(course_clean = gsub(" Classic", "", course)) %>%
-    select(event_date, location, course, course_clean, length_km, climb, control_points)
+    select(event_date, venue, course, course_clean, length_km, climb, control_points)
 
 
 CLASSIC.COURSES <- c("White", "Yellow", "Orange", "Brown", "Green", "Red", "Blue")
 classic.course.df <- classic.event.df %>%
-    inner_join(course.df, by=c("event_date", "location")) %>%
+    inner_join(course.df, by=c("event_date", "venue")) %>%
     filter(!is.na(climb),
            course_clean %in% CLASSIC.COURSES) %>%
     mutate(course_clean = factor(course_clean, CLASSIC.COURSES))
