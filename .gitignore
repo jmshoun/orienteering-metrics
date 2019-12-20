@@ -102,10 +102,19 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-.Rproj.user
 
+# Rproj files
+*.Rproj
+
+# Generated HTML
+analysis/*.html
+
+# Specific scraped and cached data files
+analysis/_cache
 data/courses.csv
 data/events.csv
 data/legs.csv
 data/splits.csv
 data/starts.csv
+
+
