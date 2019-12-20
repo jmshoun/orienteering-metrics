@@ -105,6 +105,8 @@ venv.bak/
 
 # Rproj files
 *.Rproj
+*.Rproj.user
+*.Rhistory
 
 # Generated HTML
 analysis/*.html
@@ -117,4 +119,5 @@ data/legs.csv
 data/splits.csv
 data/starts.csv
 
-
+# Mac OS filesystem junk
+*.DS_Store
