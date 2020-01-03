@@ -55,6 +55,7 @@ analysis/*.html
 # Specific scraped and cached data files
 analysis/_cache
 data/weather/
+data/isd-history.csv
 data/courses.csv
 data/events.csv
 data/legs.csv
