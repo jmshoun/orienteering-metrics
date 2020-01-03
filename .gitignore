@@ -63,3 +63,4 @@ data/starts.csv
 
 # Mac OS filesystem junk
 *.DS_Store
+.Rproj.user
